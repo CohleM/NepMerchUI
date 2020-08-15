@@ -12,6 +12,9 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import image from "../images/beauty.jpg";
+
+import two from "../images/Headphones.jpg";
+
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
@@ -34,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
 	},
 	media: {
 		height: 150,
+		[theme.breakpoints.up("sm")]: {
+			height: 200,
+		},
 	},
 	typ: {
 		//fontFamily: "Roboto",
@@ -50,13 +56,79 @@ const useStyles = makeStyles((theme) => ({
 export default function CenteredGrid() {
 	const classes = useStyles();
 
+	var Items = [
+		{
+			image: image,
+			category: "BEAUTY",
+			description: "2,153 items in this category",
+		},
+		{
+			image: two,
+			category: "ELECTRONICS",
+			description: "2,153 items in this category",
+		},
+		{
+			image: image,
+			category: "BEAUTY",
+			description: "2,153 items in this category",
+		},
+		{
+			image: two,
+			category: "ELECTRONICS",
+			description: "2,153 items in this category",
+		},
+		{
+			image: image,
+			category: "BEAUTY",
+			description: "2,153 items in this category",
+		},
+		{
+			image: two,
+			category: "ELECTRONICS",
+			description: "2,153 items in this category",
+		},
+	];
+
 	return (
 		<div className={classes.root}>
 			<Container maxWidth="xl" className={classes.ct}>
 				<Grid container spacing={2}>
-					<Grid item xs={6} sm={3}>
-						{" "}
-						<Card className={classes.root1} elevation={0}>
+					{" "}
+					{Items.map((item, i) => (
+						<Grid item xs={6} sm={4} md={3} key={i}>
+							<Card className={classes.root1} elevation={0}>
+								<CardActionArea style={{ outline: "none" }}>
+									<CardMedia
+										className={classes.media}
+										image={item.image}
+										title="Contemplative Reptile"
+									/>
+									<CardContent>
+										<Typography gutterBottom className={classes.typ}>
+											{item.category}
+										</Typography>
+										<Typography
+											variant="body2"
+											color="textSecondary"
+											component="p"
+											style={{ textAlign: "center" }}
+										>
+											{item.description}
+										</Typography>
+									</CardContent>
+								</CardActionArea>
+								{/* <CardActions>
+								<Button size="small" color="primary">
+									Share
+								</Button>
+								<Button size="small" color="primary">
+									Learn More
+								</Button>
+							</CardActions> */}
+							</Card>
+						</Grid>
+					))}
+					{/* <Card className={classes.root1} elevation={0}>
 							<CardActionArea style={{ outline: "none" }}>
 								<CardMedia
 									className={classes.media}
@@ -85,7 +157,7 @@ export default function CenteredGrid() {
 									Learn More
 								</Button>
 							</CardActions> */}
-						</Card>
+					{/* </Card>
 					</Grid>
 					<Grid item xs={6} sm={3}>
 						<Paper className={classes.paper}>gg</Paper>
@@ -95,7 +167,7 @@ export default function CenteredGrid() {
 					</Grid>
 					<Grid item xs={6} sm={3}>
 						<Paper className={classes.paper}>gg</Paper>
-					</Grid>
+					</Grid> */}{" "}
 				</Grid>
 			</Container>
 		</div>
