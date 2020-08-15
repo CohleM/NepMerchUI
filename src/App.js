@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./components/Button";
 //import logo from "./logo.svg";
+import Cards from "./components/Cards";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
@@ -21,7 +22,7 @@ function App() {
 			},
 		},
 	});
-	return <Navbar />;
+	return <Cards />;
 
 	//return <Button/>
 }
