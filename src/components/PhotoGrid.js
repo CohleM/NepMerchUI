@@ -1,53 +1,105 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import GridList from "@material-ui/core/GridList";
-import GridListTile from "@material-ui/core/GridListTile";
-import tileData from "./tileData";
+// // import React from "react";
+// // import { makeStyles } from "@material-ui/core/styles";
+// // import Card from "@material-ui/core/Card";
+// // import CardActionArea from "@material-ui/core/CardActionArea";
+// // import CardActions from "@material-ui/core/CardActions";
+// // import CardContent from "@material-ui/core/CardContent";
+// // import CardMedia from "@material-ui/core/CardMedia";
+// // import Button from "@material-ui/core/Button";
+// // import Typography from "@material-ui/core/Typography";
 
+// // const useStyles = makeStyles({
+// // 	root: {
+// // 		maxWidth: 345,
+// // 	},
+// // });
+
+// // export default function ImgMediaCard() {
+// // 	const classes = useStyles();
+
+// // 	return (
+// // 		<Card className={classes.root}>
+// // 			<CardActionArea>
+// // 				<CardMedia
+// // 					component="img"
+// // 					alt="Contemplative Reptile"
+// // 					height="140"
+// // 					image="/static/images/cards/contemplative-reptile.jpg"
+// // 					title="Contemplative Reptile"
+// // 				/>
+// // 				<CardContent>
+// // 					<Typography gutterBottom variant="h5" component="h2">
+// // 						Lizard
+// // 					</Typography>
+// // 					<Typography variant="body2" color="textSecondary" component="p">
+// // 						Lizards are a widespread group of squamate reptiles, with over 6,000
+// // 						species, ranging across all continents except Antarctica
+// // 					</Typography>
+// // 				</CardContent>
+// // 			</CardActionArea>
+// // 			<CardActions>
+// // 				<Button size="small" color="primary">
+// // 					Share
+// // 				</Button>
+// // 				<Button size="small" color="primary">
+// // 					Learn More
+// // 				</Button>
+// // 			</CardActions>
+// // 		</Card>
+// // 	);
+// // }
+
+// import React from "react";
+import React from "react";
+import Carousel from "react-material-ui-carousel";
+import { Paper } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+
+import one from "../images/one1.png";
+
+import two from "../images/gg.jpg";
+
+import three from "../images/gg.jpg";
 const useStyles = makeStyles((theme) => ({
-	root: {
-		display: "flex",
-		flexWrap: "wrap",
-		justifyContent: "space-around",
-		overflow: "hidden",
-		backgroundColor: theme.palette.background.paper,
-	},
-	gridList: {
-		width: 500,
-		height: 450,
+	img2: {
+		width: "100%",
+		height: "auto",
 	},
 }));
 
-/**
- * The example data is structured as follows:
- *
- * import image from 'path/to/image.jpg';
- * [etc...]
- *
- * const tileData = [
- *   {
- *     img: image,
- *     title: 'Image',
- *     author: 'author',
- *     cols: 2,
- *   },
- *   {
- *     [etc...]
- *   },
- * ];
- */
-export default function ImageGridList() {
+export default function Example(props) {
 	const classes = useStyles();
+	var items = [
+		{
+			image: two,
+			name: "Random Name #1",
+			description: "Probably the most random thing you have ever seen!",
+		},
+		{
+			image: two,
+			name: "Random Name #2",
+			description: "Hello World!",
+		},
+	];
 
 	return (
-		<div className={classes.root}>
-			<GridList cellHeight={160} className={classes.gridList} cols={3}>
-				{tileData.map((tile) => (
-					<GridListTile key={tile.img} cols={tile.cols || 1}>
-						<img src={tile.img} alt={tile.title} />
-					</GridListTile>
-				))}
-			</GridList>
-		</div>
+		<Carousel>
+			{items.map((item, i) => (
+				<Item key={i} item={item} />
+			))}
+		</Carousel>
+	);
+}
+
+function Item(props) {
+	const classes = useStyles();
+	return (
+		<Paper style={{ outline: "none" }}>
+			<img src={props.item.image} className={classes.img2} />
+			{/* <h2>{props.item.name}</h2>
+			<p>{props.item.description}</p>
+
+			<Button className="CheckButton">Check it out!</Button> */}
+		</Paper>
 	);
 }

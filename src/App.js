@@ -4,7 +4,8 @@ import Button from "./components/Button";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-
+import PhotoGrid from "./components/PhotoGrid";
+import Gallery from "./components/Gallery";
 function App() {
 	const theme = createMuiTheme({
 		props: {
