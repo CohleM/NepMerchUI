@@ -184,10 +184,275 @@ export default function Footer() {
 				</div>
 				<Divider />
 				<Grid container direction="row" spacing={2}>
-					<Grid item xs={2}>
+					<Grid item xs={4} md={2}>
 						<div className={classes.txtDiv}>
 							<Typography variant="h6" className={classes.bottomTxt}>
 								Information
+							</Typography>
+							<div style={{ marginTop: "20px" }}>
+								{" "}
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									About us
+								</Link>
+								<br />
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									Extras
+								</Link>
+								<br />
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									Privacy Policy
+								</Link>
+								<br />
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									Terms and Conditions
+								</Link>
+							</div>
+						</div>
+					</Grid>
+					<Grid item xs={4} md={2}>
+						<div className={classes.txtDiv}>
+							<Typography variant="h6" className={classes.bottomTxt}>
+								My Account
+							</Typography>
+							<div style={{ marginTop: "20px" }}>
+								{" "}
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									About us
+								</Link>
+								<br />
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									Services
+								</Link>
+								<br />
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									Privacy Policy
+								</Link>
+								<br />
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									Terms and Conditions
+								</Link>
+							</div>
+						</div>
+					</Grid>
+					<Grid item xs={4} md={2}>
+						<div className={classes.txtDiv}>
+							<Typography variant="h6" className={classes.bottomTxt}>
+								Useful Links
+							</Typography>
+							<div style={{ marginTop: "20px" }}>
+								{" "}
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									About us
+								</Link>
+								<br />
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									Our Offers
+								</Link>
+								<br />
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									Privacy Policy
+								</Link>
+								<br />
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									Terms and Conditions
+								</Link>
+							</div>
+						</div>
+					</Grid>
+					<Grid item xs={4} md={2}>
+						<div className={classes.txtDiv}>
+							<Typography variant="h6" className={classes.bottomTxt}>
+								Our Offers
+							</Typography>
+							<div style={{ marginTop: "20px" }}>
+								{" "}
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									About us
+								</Link>
+								<br />
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									Information
+								</Link>
+								<br />
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									Privacy Policy
+								</Link>
+								<br />
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									Terms and Conditions
+								</Link>
+							</div>
+						</div>
+					</Grid>
+					<Grid item xs={4} md={2}>
+						<div className={classes.txtDiv}>
+							<Typography variant="h6" className={classes.bottomTxt}>
+								Services
+							</Typography>
+							<div style={{ marginTop: "20px" }}>
+								{" "}
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									About us
+								</Link>
+								<br />
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									Information
+								</Link>
+								<br />
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									Privacy Policy
+								</Link>
+								<br />
+								<Link
+									variant="h6"
+									className={classes.bottomTxt}
+									component="button"
+									underline="none"
+									color="textSecondary"
+									style={{ outline: "none" }}
+								>
+									Terms and Conditions
+								</Link>
+							</div>
+						</div>
+					</Grid>
+					<Grid item xs={4} md={2}>
+						<div className={classes.txtDiv}>
+							<Typography variant="h6" className={classes.bottomTxt}>
+								Extras
 							</Typography>
 							<div style={{ marginTop: "20px" }}>
 								{" "}
@@ -238,6 +503,19 @@ export default function Footer() {
 						</div>
 					</Grid>
 				</Grid>
+				<Divider />
+				<Typography
+					color="textSecondary"
+					style={{
+						fontSize: "12px",
+						textAlign: "center",
+						marginTop: "10px",
+						marginBottom: "10px",
+					}}
+				>
+					{" "}
+					© 2020-2030, NepaliMerchandise Inc
+				</Typography>
 			</Container>
 		</div>
 	);
