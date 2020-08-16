@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import PhotoGrid from "./components/PhotoGrid";
 import Gallery from "./components/Gallery";
+import CardWithReview from "./components/CardsWithReview";
+import Footer from "./components/Footer";
 function App() {
 	const theme = createMuiTheme({
 		props: {
@@ -22,7 +24,8 @@ function App() {
 			},
 		},
 	});
-	return <Cards />;
+	return <Footer />;
+	//return <CardWithReview />;
 
 	//return <Button/>
 }

@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import "./css/main.css";
 import "react-alice-carousel/lib/alice-carousel.css";
+import "fontsource-roboto";
 ReactDOM.render(
 	<React.StrictMode>
 		<App />
