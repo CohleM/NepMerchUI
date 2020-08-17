@@ -9,6 +9,7 @@ import PhotoGrid from "./components/PhotoGrid";
 import Gallery from "./components/Gallery";
 import CardWithReview from "./components/CardsWithReview";
 import Footer from "./components/Footer";
+import CartPage from "./components/CartPage";
 function App() {
 	const theme = createMuiTheme({
 		props: {
@@ -24,7 +25,7 @@ function App() {
 			},
 		},
 	});
-	return <Footer />;
+	return <CartPage />;
 	//return <CardWithReview />;
 
 	//return <Button/>

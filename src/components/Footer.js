@@ -514,7 +514,7 @@ export default function Footer() {
 					}}
 				>
 					{" "}
-					© 2020-2030, NepaliMerchandise Inc
+					© 2020-2030, Nepali Merchandise Inc
 				</Typography>
 			</Container>
 		</div>
