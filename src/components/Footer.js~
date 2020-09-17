@@ -90,6 +90,7 @@ export default function Footer() {
 	return (
 		<div style={{ width: "100%" }}>
 			{" "}
+			//<h1> Wahaat the fu</h1>
 			<Divider />
 			<Container maxWidth="lg">
 				<div className={classes.grd}>

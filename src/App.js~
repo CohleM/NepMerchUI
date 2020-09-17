@@ -28,8 +28,7 @@ function App() {
 	});
 	//return <ProductPage />;
 	//return <CardWithReview />;
-	//return <Navbar/>
-	return <Footer />
+	return <Navbar/>
 	//return <Button/>
 }
 

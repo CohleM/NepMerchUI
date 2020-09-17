@@ -94,7 +94,7 @@ export default function Example(props) {
 function Item(props) {
 	const classes = useStyles();
 	return (
-		<Paper style={{ outline: "none" }}>
+		<Paper style={{ outline: "none" }} elevation={0}>
 			<img src={props.item.image} className={classes.img2} />
 			{/* <h2>{props.item.name}</h2>
 			<p>{props.item.description}</p>
