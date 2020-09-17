@@ -29,5 +29,5 @@ function App() {
 	return <Navbar/> //return navigation bar
 //	return <Footer />
 }
-
+//exporting to default app is compulsary
 export default App;
