@@ -72,7 +72,8 @@ const useStyles = makeStyles((theme) => ({
 			//marginTop: "30px",
 		},
 	},
-	searchIcon: {
+	//search
+		searchIcon: {
 		padding: theme.spacing(0, 2),
 		height: "100%",
 		position: "absolute",

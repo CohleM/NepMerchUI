@@ -54,38 +54,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Footer() {
 	const classes = useStyles();
 
-	// var Items = [
-	// 	{
-	// 		image: image,
-	// 		category: "BEAUTY",
-	// 		description: "2,153 items in this category",
-	// 	},
-	// 	{
-	// 		image: two,
-	// 		category: "ELECTRONICS",
-	// 		description: "2,153 items in this category",
-	// 	},
-	// 	{
-	// 		image: image,
-	// 		category: "BEAUTY",
-	// 		description: "2,153 items in this category",
-	// 	},
-	// 	{
-	// 		image: two,
-	// 		category: "ELECTRONICS",
-	// 		description: "2,153 items in this category",
-	// 	},
-	// 	{
-	// 		image: image,
-	// 		category: "BEAUTY",
-	// 		description: "2,153 items in this category",
-	// 	},
-	// 	{
-	// 		image: two,
-	// 		category: "ELECTRONICS",
-	// 		description: "2,153 items in this category",
-	// 	},
-	// ];
+
 
 	return (
 		<div style={{ width: "100%" }}>
