@@ -1,5 +1,5 @@
 import React from "react";
-
+//import all req directories
 //import { Link } from "react-router-dom";
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
@@ -33,6 +33,7 @@ import MailIcon from "@material-ui/icons/Mail";
 import PhotoGrid from "../components/PhotoGrid";
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
+//ui design for buutons
 	root: {
 		//display: "flex",
 	},
