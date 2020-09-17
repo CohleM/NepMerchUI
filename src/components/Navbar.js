@@ -33,6 +33,7 @@ import MailIcon from "@material-ui/icons/Mail";
 import PhotoGrid from "../components/PhotoGrid";
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
+//ui design for buutons
 	root: {
 		//display: "flex",
 	},
