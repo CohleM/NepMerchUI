@@ -19,7 +19,7 @@
     "react-swipeable-views": "^0.13.9",
     "react-swipeable-views-utils": "^0.13.9"
   },
-  "scripts": {
+  "scripts": { //starting build testing and eject 
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
