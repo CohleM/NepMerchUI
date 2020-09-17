@@ -26,8 +26,8 @@ function App() {
 			},
 		},
 	});
-//	return <Navbar/>
-	return <Footer />
+	return <Navbar/>//returns navigation bar
+	//return <Footer />
 }
 
 export default App;
