@@ -26,10 +26,8 @@ function App() {
 			},
 		},
 	});
-	//return <ProductPage />;
-	//return <CardWithReview />;
 	return <Navbar/>
-	//return <Button/>
+//	return <Footer />
 }
 
 export default App;
