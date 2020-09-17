@@ -9,6 +9,9 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import IconButton from "@material-ui/core/IconButton";
+
+//material-ui.com/
+//used this website to grids and customize the grids as needed
 const useStyles = makeStyles((theme) => ({
 	typ: {
 		//fontFamily: "Roboto",
