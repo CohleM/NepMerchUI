@@ -1,6 +1,5 @@
-import React from "react";
-
 //import { Link } from "react-router-dom";
+import React from "react";
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -45,16 +44,18 @@ const useStyles = makeStyles((theme) => ({
 		marginLeft: "auto",
 		marginRight: "auto",
 	},
-
+//App Bar Background coloring
 	appBarBg: {
 		backgroundColor: "#222F3E",
 
 		//height: "90px",
 	},
+	//Menu Button
 	menuButton: {
 		height: "90px",
 		marginRight: "auto",
 	},
+	//Search Bar defining: dimension, position, color , background color, margin
 	search: {
 		position: "relative",
 		borderRadius: 20,
@@ -72,6 +73,7 @@ const useStyles = makeStyles((theme) => ({
 			//marginTop: "30px",
 		},
 	},
+	//Search icon defining
 	searchIcon: {
 		padding: theme.spacing(0, 2),
 		height: "100%",
@@ -100,7 +102,7 @@ const useStyles = makeStyles((theme) => ({
 			width: "100%",
 		},
 	},
-
+//icon defining
 	icons: {
 		height: "90px",
 		marginRight: "auto",
@@ -115,6 +117,7 @@ const useStyles = makeStyles((theme) => ({
 			duration: theme.transitions.duration.leavingScreen,
 		}),
 	},
+	//App Bar shifting defining if needed
 	appBarShift: {
 		// width: `calc(100% - ${drawerWidth}px)`,
 		// transition: theme.transitions.create(["margin", "width"], {
