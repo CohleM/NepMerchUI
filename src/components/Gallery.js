@@ -2,6 +2,7 @@ import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
+//gallery page looks fine
 class Gallery extends React.Component {
 	state = {
 		galleryItems: [1, 2, 3].map((i) => <h2 key={i}>{i}</h2>),
