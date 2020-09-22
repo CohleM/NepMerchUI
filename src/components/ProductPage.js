@@ -18,7 +18,7 @@ import Carousel from "react-material-ui-carousel";
 import Rating from "@material-ui/lab/Rating";
 import one from "../images/beauty.jpg";
 
-//material-ui.com/
+
 const useStyles = makeStyles((theme) => ({
 	root: {
 		display: "flex",

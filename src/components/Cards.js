@@ -56,6 +56,9 @@ const useStyles = makeStyles((theme) => ({
 export default function CenteredGrid() {
 	const classes = useStyles();
 
+	//different images input and their category and description classified
+
+	//
 	var Items = [
 		{
 			image: image,
