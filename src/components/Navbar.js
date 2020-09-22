@@ -1,5 +1,5 @@
 import React from "react";
-//import all req directories
+
 //import { Link } from "react-router-dom";
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
@@ -33,7 +33,6 @@ import MailIcon from "@material-ui/icons/Mail";
 import PhotoGrid from "../components/PhotoGrid";
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
-//ui design for buutons
 	root: {
 		//display: "flex",
 	},
@@ -73,8 +72,7 @@ const useStyles = makeStyles((theme) => ({
 			//marginTop: "30px",
 		},
 	},
-	//search
-		searchIcon: {
+	searchIcon: {
 		padding: theme.spacing(0, 2),
 		height: "100%",
 		position: "absolute",

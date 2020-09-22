@@ -14,6 +14,9 @@ import Grid from "@material-ui/core/Grid";
 import { Paper, Divider, Button } from "@material-ui/core";
 import ClearIcon from "@material-ui/icons/Clear";
 import Container from "@material-ui/core/Container";
+// filled page importing photos
+//varaibles: marginTop, marginBottom, flexDirection, flex, width, height, alignItems, paddingLeft, paddingBottom,
+// color, border, borderRadius,
 const useStyles = makeStyles((theme) => ({
 	root: {
 		display: "flex",
