@@ -1,5 +1,5 @@
 {
-  "name": "uitest",
+  "name": "uitest", //test
   "version": "0.1.0",
   "private": true,
   "dependencies": {//dependencies
